@@ -1,0 +1,42 @@
+import Header from "./Header";
+import StudentProfile from "./StudentProfile";
+import Footer from "./Footer";
+import "./App.css";
+
+function App() {
+
+  
+  const student1Name = "Adhithya ";
+  const student1Department = "CSE";
+  const student1Year = "3rd Year";
+
+  const student2Name = "Vishawajath ";
+  const student2Department = "Computer Science";
+  const student2Year = "3rd Year";
+
+  return (
+    <div className="container">
+
+      <Header />
+
+      <h2>Student 1</h2>
+      <StudentProfile
+        name={student1Name}
+        department={student1Department}
+        year={student1Year}
+      />
+
+      <h2>Student 2</h2>
+      <StudentProfile
+        name={student2Name}
+        department={student2Department}
+        year={student2Year}
+      />
+
+      <Footer />
+
+    </div>
+  );
+}
+
+export default App;
